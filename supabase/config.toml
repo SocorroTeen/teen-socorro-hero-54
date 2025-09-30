@@ -1,0 +1,4 @@
+project_id = "nwvdskknzhrwuzzubhva"
+
+[functions.socorro-ia-chat]
+verify_jwt = false

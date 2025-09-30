@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Home, Heart, Users, HelpCircle, BookOpen, Menu, X } from 'lucide-react';
+import { Home, Heart, Users, HelpCircle, BookOpen, Menu, X, Bot } from 'lucide-react';
 import { useLocation, Link } from 'react-router-dom';
 
 const Navigation = () => {
@@ -10,6 +10,7 @@ const Navigation = () => {
   const menuItems = [
     { to: '/', icon: Home, label: 'Início', emoji: '🏠' },
     { to: '/primeiros-socorros', icon: Heart, label: 'Primeiros Socorros', emoji: '🚑' },
+    { to: '/socorro-ia', icon: Bot, label: 'Socorro IA', emoji: '🤖' },
     { to: '/simulador', icon: Users, label: 'Simulador', emoji: '🎮' },
     { to: '/quiz', icon: HelpCircle, label: 'Quiz', emoji: '❓' },
     { to: '/sobre', icon: BookOpen, label: 'Sobre', emoji: '📚' },

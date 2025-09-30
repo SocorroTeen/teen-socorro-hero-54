@@ -66,12 +66,17 @@ const Index = () => {
             <span className="text-trust font-semibold"> divertida</span>! 
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-2xl mx-auto">
             <QuickAccessButton
               title="EMERGÊNCIA AGORA!"
               emoji="🚨"
               variant="emergency"
               onClick={() => navigate('/modo-rapido')}
+            />
+            <QuickAccessButton
+              title="Socorro IA"
+              emoji="🤖"
+              onClick={() => navigate('/socorro-ia')}
             />
             <QuickAccessButton
               title="Quero Aprender"

@@ -11,6 +11,7 @@ import Quiz from "./pages/Quiz";
 import Simulador from "./pages/Simulador";
 import Sobre from "./pages/Sobre";
 import ModoRapido from "./pages/ModoRapido";
+import SocorroIA from "./pages/SocorroIA";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/simulador" element={<Simulador />} />
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/modo-rapido" element={<ModoRapido />} />
+          <Route path="/socorro-ia" element={<SocorroIA />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
