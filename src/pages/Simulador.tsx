@@ -51,7 +51,7 @@ const Simulador = () => {
           correct: 0,
           feedback: {
             correct: "Perfeito! 🎉 Chamar ajuda e verificar responsividade é sempre o primeiro passo!",
-            incorrect: "Ops! 😅 Primeiro devemos chamar ajuda e verificar se a pessoa responde. Nunca deixe a vítima sozinha!"
+            incorrect: "Ops! 😅 Primeiro devemos chamar ajuda e verificar se a pessoa responde. Nunca deixe a vítima sozinha! 💡 Converse com o SOCORRO IA para aprender mais."
           }
         },
         {
@@ -66,7 +66,7 @@ const Simulador = () => {
           correct: 0,
           feedback: {
             correct: "Excelente! 🌟 A posição lateral de segurança evita que a pessoa engasgue caso vomite!",
-            incorrect: "Cuidado! 😰 Quando alguém está inconsciente mas respirando, a posição lateral de segurança é mais segura!"
+            incorrect: "Cuidado! 😰 Quando alguém está inconsciente mas respirando, a posição lateral de segurança é mais segura! 💡 Converse com o SOCORRO IA para aprender o passo correto."
           }
         }
       ]
@@ -90,7 +90,7 @@ const Simulador = () => {
           correct: 0,
           feedback: {
             correct: "Isso mesmo! 👏 Se a pessoa ainda consegue tossir, deixe-a continuar - a tosse pode expelir o objeto!",
-            incorrect: "Atenção! 🚨 Se a pessoa ainda tosse, não interfira! A tosse é o mecanismo natural do corpo para expelir objetos!"
+            incorrect: "Atenção! 🚨 Se a pessoa ainda tosse, não interfira! A tosse é o mecanismo natural do corpo para expelir objetos! 💡 Converse com o SOCORRO IA para entender melhor."
           }
         },
         {
@@ -105,7 +105,163 @@ const Simulador = () => {
           correct: 0,
           feedback: {
             correct: "Perfeito! 🎯 Quando a pessoa não consegue mais tossir ou respirar, a manobra de Heimlich é essencial!",
-            incorrect: "Cuidado! ⚠️ Quando há obstrução total (pessoa não consegue respirar), apenas a manobra de Heimlich pode salvar!"
+            incorrect: "Cuidado! ⚠️ Quando há obstrução total (pessoa não consegue respirar), apenas a manobra de Heimlich pode salvar! 💡 Converse com o SOCORRO IA para aprender o passo a passo correto."
+          }
+        }
+      ]
+    },
+    {
+      id: 3,
+      title: "Parada Cardíaca no Jogo",
+      emoji: "💔",
+      description: "Um aluno caiu desacordado e não está respirando",
+      situation: "Durante uma partida de futebol, um colega cai no chão e não se move. Você se aproxima e percebe que ele não responde e não está respirando normalmente.",
+      steps: [
+        {
+          step: 1,
+          action: "O que você faz primeiro?",
+          options: [
+            "Grito por ajuda, chamo o 192 (SAMU) e inicio massagem cardíaca",
+            "Tento dar respiração boca a boca",
+            "Jogo água no rosto dele",
+            "Espero alguém mais velho chegar"
+          ],
+          correct: 0,
+          feedback: {
+            correct: "Excelente! 🚨 Chamar ajuda e iniciar RCP imediatamente é crucial em parada cardíaca!",
+            incorrect: "Atenção! 💔 Em parada cardíaca, cada segundo conta! Chame o 192 e inicie a massagem cardíaca! 💡 Converse com o SOCORRO IA para aprender RCP."
+          }
+        },
+        {
+          step: 2,
+          action: "Como fazer a massagem cardíaca correta?",
+          options: [
+            "Pressiono o centro do peito com força, 100-120 vezes por minuto",
+            "Pressiono levemente para não machucar",
+            "Alterno entre pressionar peito e barriga",
+            "Espero o SAMU chegar"
+          ],
+          correct: 0,
+          feedback: {
+            correct: "Perfeito! 💪 Compressões rápidas e fortes no centro do peito mantêm o sangue circulando!",
+            incorrect: "Cuidado! A massagem cardíaca precisa ser forte e rápida! 💡 Converse com o SOCORRO IA para praticar mentalmente."
+          }
+        }
+      ]
+    },
+    {
+      id: 4,
+      title: "Crise Epiléptica na Sala de Aula",
+      emoji: "⚡",
+      description: "Um colega começou a ter convulsões durante a aula",
+      situation: "Durante a aula, você vê um colega cair da cadeira e começar a ter movimentos involuntários (convulsões). Todo mundo fica assustado.",
+      steps: [
+        {
+          step: 1,
+          action: "O que você NÃO deve fazer durante a convulsão?",
+          options: [
+            "Afasto objetos perigosos e protejo a cabeça dele",
+            "Tento segurar os movimentos dele com força",
+            "Coloco algo na boca para não morder a língua",
+            "Jogo água no rosto"
+          ],
+          correct: 0,
+          feedback: {
+            correct: "Correto! ✅ Proteger a pessoa de machucados é a prioridade. Nunca segure ou coloque nada na boca!",
+            incorrect: "Cuidado! ⚡ NUNCA segure a pessoa ou coloque objetos na boca durante convulsão! 💡 Converse com o SOCORRO IA para saber o que fazer."
+          }
+        },
+        {
+          step: 2,
+          action: "A convulsão parou. O que fazer agora?",
+          options: [
+            "Coloco a pessoa de lado e aguardo ela acordar, chamando ajuda",
+            "Tento acordar a pessoa imediatamente",
+            "Dou água para ela beber",
+            "Levanto ela para caminhar"
+          ],
+          correct: 0,
+          feedback: {
+            correct: "Perfeito! 🌟 Posição lateral é segura enquanto a pessoa se recupera da convulsão!",
+            incorrect: "Atenção! Após convulsão, a pessoa precisa de tempo. Posição lateral é essencial! 💡 Converse com o SOCORRO IA para entender melhor."
+          }
+        }
+      ]
+    },
+    {
+      id: 5,
+      title: "Queda com Possível Fratura",
+      emoji: "🦴",
+      description: "Um estudante caiu da escada e não consegue se levantar",
+      situation: "Você vê um colega cair de alguns degraus da escada. Ele está no chão, consciente, mas gritando de dor e não consegue mover uma das pernas.",
+      steps: [
+        {
+          step: 1,
+          action: "Qual a primeira ação correta?",
+          options: [
+            "Peço para ele não se mexer e chamo ajuda imediatamente",
+            "Ajudo ele a levantar devagar",
+            "Puxo a perna dele para ver se está quebrada",
+            "Peço para ele tentar andar"
+          ],
+          correct: 0,
+          feedback: {
+            correct: "Excelente! 🎯 Em suspeita de fratura, imobilizar e não mover é fundamental!",
+            incorrect: "Cuidado! 🦴 NUNCA mova alguém com suspeita de fratura! Pode piorar muito! 💡 Converse com o SOCORRO IA para saber como agir."
+          }
+        },
+        {
+          step: 2,
+          action: "Enquanto espera ajuda, o que você pode fazer?",
+          options: [
+            "Acalmo a pessoa e imobilizo a região com objetos ao redor",
+            "Massageio a perna dolorida",
+            "Coloco gelo diretamente na pele",
+            "Tento empurrar o osso de volta no lugar"
+          ],
+          correct: 0,
+          feedback: {
+            correct: "Muito bem! 👏 Acalmar e imobilizar com cuidado ajuda até a chegada do socorro!",
+            incorrect: "Atenção! Nunca mexa na fratura! Apenas acalme e imobilize! 💡 Converse com o SOCORRO IA para aprender imobilização."
+          }
+        }
+      ]
+    },
+    {
+      id: 6,
+      title: "Intoxicação Acidental",
+      emoji: "☠️",
+      description: "Um amigo bebeu um produto de limpeza por engano",
+      situation: "Você está na casa de um amigo quando ele, por engano, bebe de uma garrafa que continha produto de limpeza. Ele começa a sentir dor e náusea.",
+      steps: [
+        {
+          step: 1,
+          action: "O que fazer IMEDIATAMENTE?",
+          options: [
+            "Ligo para o 192 (SAMU) ou Centro de Intoxicação e não dou nada para beber",
+            "Faço ele vomitar imediatamente",
+            "Dou leite para neutralizar",
+            "Dou água com sal"
+          ],
+          correct: 0,
+          feedback: {
+            correct: "Perfeito! 📞 Ligar para especialistas é crucial! Nunca provoque vômito sem orientação!",
+            incorrect: "Cuidado! ☠️ NUNCA induza vômito! Produtos químicos podem queimar ainda mais ao voltar! 💡 Converse com o SOCORRO IA para saber o protocolo."
+          }
+        },
+        {
+          step: 2,
+          action: "O que fazer enquanto espera o socorro?",
+          options: [
+            "Mantenho a pessoa calma, em posição confortável e guardo a embalagem do produto",
+            "Dou comida para absorver o veneno",
+            "Faço a pessoa correr para acelerar a eliminação",
+            "Aplico massagem na barriga"
+          ],
+          correct: 0,
+          feedback: {
+            correct: "Excelente! 🌟 Manter calma e guardar a embalagem ajuda os profissionais no tratamento!",
+            incorrect: "Atenção! Não dê comida ou faça movimentos! Mantenha calma e guarde a embalagem! 💡 Converse com o SOCORRO IA para mais orientações."
           }
         }
       ]
